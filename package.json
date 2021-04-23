@@ -1,0 +1,19 @@
+{
+  "name": "p3_maulave_stephane",
+  "version": "1.0.0",
+  "description": "projet 3 OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toops61/StephaneMaulave_3_23042021.git"
+  },
+  "author": "Toops61",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toops61/StephaneMaulave_3_23042021/issues"
+  },
+  "homepage": "https://github.com/toops61/StephaneMaulave_3_23042021#readme"
+}
