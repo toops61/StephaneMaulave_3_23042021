@@ -4,7 +4,8 @@
   "description": "projet 3 OhMyFood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,8 +13,12 @@
   },
   "author": "Toops61",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/toops61/StephaneMaulave_3_23042021/issues"
   },
-  "homepage": "https://github.com/toops61/StephaneMaulave_3_23042021#readme"
+  "homepage": "https://github.com/toops61/StephaneMaulave_3_23042021#readme",
+  "dependencies": {
+    "sass": "^1.32.4"
+  }
 }
