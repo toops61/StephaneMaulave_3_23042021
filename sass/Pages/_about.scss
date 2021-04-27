@@ -1,0 +1,40 @@
+.city {
+    display: flex;
+    justify-content: center;
+    background-color: $fifth-color;
+    padding-left: 8%;
+    img {    
+        width: 4%;
+        height: 100%;
+        align-self: center;
+    }
+    &-place {
+        background-color: $fifth-color;
+        border: none;
+        margin: .5rem 1rem;
+    }
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $fourth-color;
+    padding-bottom: 3rem;
+    &:nth-child(n) {
+        text-align: center;
+    }
+    h1 {  
+        width: 70%;
+        margin:2.2rem auto .5rem;
+    }
+    p {
+        width: 90%;
+        margin: .4rem auto 2rem;
+    }
+}
+
+.fonctionnement {
+    border: solid orange;
+    padding-top: 1.2rem;
+}

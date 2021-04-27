@@ -7,26 +7,49 @@ body {
   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
+  font-family: "roboto bold";
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto thin";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+@font-face {
   font-family: "shrikhand";
   src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
 }
-body {
+body, h2 {
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 
+strong, h1 {
+  font-family: "Roboto bold";
+}
+
+p {
+  font-family: "Roboto thin";
+}
+
 h1 {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
-header h1 {
-  font-size: 3rem;
-  font-family: "shrikhand", Arial, Helvetica, sans-serif;
+h2, input {
+  font-size: 1rem;
 }
 
-header {
-  position: relative;
-  text-align: center;
-  border: solid red;
+p {
+  font-size: 1.1rem;
+}
+
+.btn-action {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  color: white;
+  border-radius: 30px;
+}
+.btn-action h2 {
+  margin: 0.8rem 1rem;
 }
 
 .container {
@@ -34,6 +57,67 @@ header {
   max-width: 1920px;
   margin: 0 auto;
   border: solid red;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  margin: 0.6rem auto 0.4rem;
+}
+header img {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  width: 5%;
+  height: 2rem;
+  transform: rotate(-90deg);
+  opacity: 0;
+}
+header h1 {
+  font-size: 2rem;
+  font-family: "shrikhand", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.city {
+  display: flex;
+  justify-content: center;
+  background-color: #e2e2e2;
+  padding-left: 8%;
+}
+.city img {
+  width: 4%;
+  height: 100%;
+  align-self: center;
+}
+.city-place {
+  background-color: #e2e2e2;
+  border: none;
+  margin: 0.5rem 1rem;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding-bottom: 3rem;
+}
+.introduction:nth-child(n) {
+  text-align: center;
+}
+.introduction h1 {
+  width: 70%;
+  margin: 2.2rem auto 0.5rem;
+}
+.introduction p {
+  width: 90%;
+  margin: 0.4rem auto 2rem;
+}
+
+.fonctionnement {
+  border: solid orange;
+  padding-top: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

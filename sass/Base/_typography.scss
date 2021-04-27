@@ -1,6 +1,16 @@
 @font-face {
     font-family: 'roboto';
-    src: url('../fonts/Roboto-Regular.ttf') format('truetype')
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto bold';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto thin';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -8,15 +18,27 @@
     src: url('../fonts/Shrikhand-Regular.ttf') format('truetype');
 }
 
-body {
+body, h2 {
     font-family: 'roboto', Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    font-size: 2rem;
+strong, h1 {
+    font-family: 'Roboto bold';
 }
 
-header h1 {
-    font-size: 3rem;
-    font-family: 'shrikhand', Arial, Helvetica, sans-serif;
+p {
+    font-family: 'Roboto thin';
 }
+
+h1 {
+    font-size: 1.4rem;
+}
+
+h2, input {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+

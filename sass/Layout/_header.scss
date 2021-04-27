@@ -1,5 +1,19 @@
 header {
     position: relative;
     text-align: center;
-    border: solid red;
+    margin: .6rem auto .4rem;
+    img {
+        position: absolute;
+        left: 1rem;
+        top: .5rem;
+        width: 5%;
+        height: 2rem;
+        transform: rotate(-90deg);
+        opacity: 0;
+    }
+    h1 {
+        font-size: 2rem;
+        font-family: 'shrikhand', Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
 }
