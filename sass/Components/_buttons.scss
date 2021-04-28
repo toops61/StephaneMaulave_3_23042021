@@ -3,7 +3,77 @@
     border: none;
     color: white;
     border-radius: 30px;
+    @include btn-shadow;
     h2 {
-        margin: .8rem 1rem;
+        margin: 1rem;
+    }
+}
+
+.fonctionnement-btn {
+    width: 90%;
+    height: 4.5rem;
+    border: solid blue;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    background-color: $fourth-color;
+    @include btn-shadow;
+    img {  
+        height: 1.1rem;
+        width: auto;
+        margin: auto 1.3rem;
+    }
+    &__number {
+        background-color: $primary-color;
+        color: white;
+        width: 1.5rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        padding-top: .3rem;
+        margin-left: -1.3rem;
+    }
+}
+
+.restaurants-card {
+    width: 20rem;
+    height: 14rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    @include btn-shadow;
+    border: solid blue;
+    &__img {
+        width: 100%;
+        height: 72%;
+        margin-top: -1rem;
+        object-fit: cover;
+        object-position: 0 -4rem;
+        border-radius: 20px 20px 0 0;
+        border: solid green;
+    }
+    &__legend {
+        width: 100%;
+        height: 28%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: -1rem;
+        border: solid green;
+        img {
+            width: 1.8rem;
+            height: 1.8rem;
+            margin: 1.3rem;
+        }
+        &__title {
+            margin-left: 1rem;
+            text-align: left;
+            h3 {
+                margin-bottom: 0;
+                margin-top: .9rem;
+            }
+            p {
+                margin-top: .2rem;
+            }
+        }
     }
 }
