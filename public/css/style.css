@@ -86,14 +86,14 @@ header h1 {
   padding-left: 8%;
 }
 .city img {
-  width: 4%;
-  height: 100%;
+  width: 1rem;
+  height: 1rem;
   align-self: center;
 }
 .city-place {
   background-color: #e2e2e2;
   border: none;
-  margin: 0.5rem 1rem;
+  margin: 0.8rem 1rem;
 }
 
 .introduction {
