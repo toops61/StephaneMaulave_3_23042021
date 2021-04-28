@@ -58,9 +58,9 @@ p {
 }
 
 .fonctionnement-btn {
+  border: none;
   width: 90%;
   height: 4.5rem;
-  border: solid blue;
   border-radius: 25px;
   display: flex;
   align-items: center;
@@ -84,13 +84,13 @@ p {
 }
 
 .restaurants-card {
+  border: none;
   width: 20rem;
   height: 14rem;
   padding: 0;
   margin-bottom: 1rem;
   border-radius: 20px;
   box-shadow: 2px 2px 8px #909090;
-  border: solid blue;
 }
 .restaurants-card__img {
   width: 100%;
@@ -99,7 +99,6 @@ p {
   object-fit: cover;
   object-position: 0 -4rem;
   border-radius: 20px 20px 0 0;
-  border: solid green;
 }
 .restaurants-card__legend {
   width: 100%;
@@ -107,7 +106,6 @@ p {
   display: flex;
   justify-content: space-between;
   margin-top: -1rem;
-  border: solid green;
 }
 .restaurants-card__legend img {
   width: 1.8rem;
@@ -126,21 +124,40 @@ p {
   margin-top: 0.2rem;
 }
 
-.container {
+.container, footer {
   min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
-  border: solid red;
 }
 
 footer {
+  background-color: #444444;
+  color: white;
+  padding-top: 1.4rem;
+}
+
+.footer-menu {
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
-footer h1 {
-  font-size: 2rem;
+.footer-menu h1 {
+  font-size: 1.2rem;
   font-family: "shrikhand", Arial, Helvetica, sans-serif;
   margin: 0;
+}
+.footer-menu ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer-menu img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.footer-menu li {
+  margin-bottom: 0.7rem;
 }
 
 header {
@@ -150,9 +167,9 @@ header {
 }
 header img {
   position: absolute;
-  left: 1rem;
+  left: 1.4rem;
   top: 0.5rem;
-  width: 5%;
+  width: 1rem;
   height: 2rem;
   transform: rotate(-90deg);
   opacity: 0;
@@ -163,18 +180,18 @@ header h1 {
   margin: 0;
 }
 
-.city {
+.city-form {
   display: flex;
   justify-content: center;
   background-color: #e2e2e2;
-  padding-left: 8%;
 }
-.city img {
+.city-form img {
+  margin-left: 3.5rem;
   width: 1rem;
   height: 1rem;
   align-self: center;
 }
-.city-place {
+.city-form__place {
   background-color: #e2e2e2;
   border: none;
   margin: 0.8rem 1rem;
@@ -201,7 +218,6 @@ header h1 {
 
 .fonctionnement-section, .restaurants {
   padding: 1.5rem 0 3rem;
-  border: solid orange;
 }
 .fonctionnement-section h1, .restaurants h1 {
   margin-left: 5%;
@@ -211,7 +227,6 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid purple;
 }
 
 .restaurants {

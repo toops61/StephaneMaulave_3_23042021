@@ -1,10 +1,30 @@
 footer {
+    background-color: darken($fourth-color,70%);
+    color: white;
+    padding-top: 1.4rem;
+    @extend .container;
+}
+
+.footer-menu {
+    margin-left: 2rem;
     display: flex;
     flex-direction: column;
-    border: solid red;
+    width: 100%;
     h1 {
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-family: 'shrikhand', Arial, Helvetica, sans-serif;
         margin: 0;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    img {
+        width: 1rem;
+        height: 1rem;
+        margin-right: .5rem;
+    }
+    li {
+        margin-bottom: .7rem;
     }
 }
