@@ -61,6 +61,10 @@ p {
 .btn-action h2 {
   margin: 1rem;
 }
+.btn-action--long {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 
 .fonctionnement-btn {
   border: none;
