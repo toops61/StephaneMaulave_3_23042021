@@ -193,6 +193,9 @@ footer {
 .footer-menu li {
   margin-bottom: 0.7rem;
 }
+.footer-menu a {
+  color: white;
+}
 
 header {
   position: relative;
