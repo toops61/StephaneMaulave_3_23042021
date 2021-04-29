@@ -51,3 +51,16 @@
 .restaurants-cards {
     @include flex-column;
 }
+
+#palette {
+    object-position: 0 -4rem;
+}
+
+#note {
+    object-fit: cover;
+    object-position: 0 -9rem;
+}
+
+#france, #delice {
+    object-position: 0 -5rem;
+}

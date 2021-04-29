@@ -23,11 +23,11 @@ a {
   font-family: "shrikhand";
   src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
 }
-body, h3 {
+body {
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 
-h2, h4, strong {
+h2, h3, h4, strong {
   font-family: "Roboto bold";
 }
 
@@ -36,7 +36,7 @@ p {
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 h3, input {
@@ -48,7 +48,7 @@ h4 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .btn-action {
@@ -59,7 +59,7 @@ p {
   box-shadow: 2px 2px 8px #909090;
 }
 .btn-action h3 {
-  margin: 1rem;
+  margin: 1.2rem;
 }
 .btn-action--long {
   padding-left: 2rem;
@@ -94,27 +94,26 @@ p {
 }
 
 .restaurants-card {
+  position: relative;
   width: 20rem;
-  height: 14rem;
-  padding: 0;
+  height: 15rem;
   margin-bottom: 1rem;
   border-radius: 20px;
   box-shadow: 2px 2px 8px #909090;
 }
 .restaurants-card__img {
   width: 100%;
-  height: 72%;
-  margin-top: -1rem;
-  object-fit: cover;
-  object-position: 0 -4rem;
+  height: 100%;
   border-radius: 20px 20px 0 0;
 }
 .restaurants-card__legend {
+  position: absolute;
+  background-color: white;
   width: 100%;
-  height: 28%;
+  bottom: 0;
+  border-radius: 0 0 20px 20px;
   display: flex;
   justify-content: space-between;
-  margin-top: -1rem;
 }
 .restaurants-card__legend img {
   width: 1.8rem;
@@ -125,12 +124,25 @@ p {
   margin-left: 1rem;
   text-align: left;
 }
-.restaurants-card__legend__title h4 {
+.restaurants-card__legend__title h3 {
   margin-bottom: 0;
   margin-top: 0.9rem;
 }
 .restaurants-card__legend__title p {
   margin-top: 0.2rem;
+  font-size: 1rem;
+}
+.restaurants-card__new {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  width: 26%;
+  background-color: #99E2D0;
+  color: #278870;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .btn-plat {
@@ -273,6 +285,19 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#palette {
+  object-position: 0 -4rem;
+}
+
+#note {
+  object-fit: cover;
+  object-position: 0 -9rem;
+}
+
+#france, #delice {
+  object-position: 0 -5rem;
 }
 
 .section-menus {
