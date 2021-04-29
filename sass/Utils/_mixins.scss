@@ -1,3 +1,14 @@
 @mixin btn-shadow {
     box-shadow: 2px 2px 8px darken($fourth-color,40%);
 }
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin police-logo {
+    font-family: 'shrikhand', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}

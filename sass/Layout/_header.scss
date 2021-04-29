@@ -11,8 +11,7 @@ header {
         transform: rotate(-90deg);
     }
     h1 {
-        font-size: 2rem;
-        font-family: 'shrikhand', Arial, Helvetica, sans-serif;
+        @include police-logo;
         margin: 0;
     }
 }
