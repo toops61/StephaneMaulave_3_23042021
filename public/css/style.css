@@ -23,11 +23,11 @@ a {
   font-family: "shrikhand";
   src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
 }
-body, h2 {
+body, h3 {
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 
-h1, h3, strong {
+h2, h4, strong {
   font-family: "Roboto bold";
 }
 
@@ -35,15 +35,15 @@ p {
   font-family: "Roboto thin";
 }
 
-h1 {
+h2 {
   font-size: 1.6rem;
 }
 
-h2, input {
+h3, input {
   font-size: 1.1rem;
 }
 
-h3 {
+h4 {
   font-size: 1.2rem;
 }
 
@@ -58,7 +58,7 @@ p {
   border-radius: 30px;
   box-shadow: 2px 2px 8px #909090;
 }
-.btn-action h2 {
+.btn-action h3 {
   margin: 1rem;
 }
 .btn-action--long {
@@ -86,14 +86,14 @@ p {
   background-color: #9356DC;
   color: white;
   width: 1.5rem;
-  height: 1.2rem;
+  height: 1.3rem;
   border-radius: 50%;
-  padding-top: 0.3rem;
-  margin-left: -1.3rem;
+  padding-top: 0.2rem;
+  margin-left: -0.7rem;
+  text-align: center;
 }
 
 .restaurants-card {
-  border: none;
   width: 20rem;
   height: 14rem;
   padding: 0;
@@ -125,7 +125,7 @@ p {
   margin-left: 1rem;
   text-align: left;
 }
-.restaurants-card__legend__title h3 {
+.restaurants-card__legend__title h4 {
   margin-bottom: 0;
   margin-top: 0.9rem;
 }
@@ -143,8 +143,8 @@ p {
   box-shadow: 2px 2px 8px #909090;
   border: none;
 }
-.btn-plat h2 {
-  font-size: 1.2rem;
+.btn-plat h3 {
+  width: 85%;
   margin-top: 0.8rem;
   margin-bottom: 0;
 }
@@ -155,7 +155,7 @@ p {
 }
 .btn-plat__legend p {
   margin-top: 0.4rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .container, footer {
@@ -175,7 +175,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.footer-menu h1 {
+.footer-menu h2 {
   font-family: "shrikhand", Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-size: 1.2rem;
@@ -243,7 +243,7 @@ header h1 {
 .introduction:nth-child(n) {
   text-align: center;
 }
-.introduction h1 {
+.introduction h2 {
   width: 70%;
   margin: 2.2rem auto 0.5rem;
 }
@@ -255,7 +255,7 @@ header h1 {
 .fonctionnement-section, .restaurants {
   padding: 1.5rem 0 3rem;
 }
-.fonctionnement-section h1, .restaurants h1 {
+.fonctionnement-section h2, .restaurants h2 {
   margin-left: 5%;
 }
 
@@ -302,7 +302,7 @@ header h1 {
   justify-content: space-between;
   align-items: center;
 }
-.menu-article__header h1 {
+.menu-article__header h2 {
   font-family: "shrikhand", Arial, Helvetica, sans-serif;
   font-size: 2rem;
 }
@@ -317,7 +317,7 @@ header h1 {
   align-items: flex-start;
   margin-bottom: 2rem;
 }
-.menu-article__single__header h2 {
+.menu-article__single__header h3 {
   margin-bottom: 0.5rem;
 }
 

@@ -19,7 +19,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h1 {
+        h2 {
             @include police-logo;
         }
         img {
@@ -33,7 +33,7 @@
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 2rem;
-        &__header h2 {
+        &__header h3 {
             margin-bottom: .5rem;
         }
     }
