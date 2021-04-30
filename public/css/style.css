@@ -23,11 +23,11 @@ a {
   font-family: "shrikhand";
   src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
 }
-body {
+body, h3 {
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 
-h2, h3, h4, strong {
+h2, h4, strong {
   font-family: "Roboto bold";
 }
 
@@ -39,27 +39,30 @@ h2 {
   font-size: 1.4rem;
 }
 
-h3, input {
+p {
   font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 h4 {
   font-size: 1.2rem;
 }
 
-p {
-  font-size: 1.1rem;
+input {
+  font-size: 0.9rem;
 }
 
 .btn-action {
   background: linear-gradient(#FF79DA, #9356DC);
-  border: none;
   color: white;
   border-radius: 30px;
-  box-shadow: 2px 2px 8px #aaaaaa;
+  box-shadow: 2px 2px 14px #c3c3c3;
 }
 .btn-action h3 {
-  margin: 1.2rem;
+  margin: 1rem 1.2rem;
 }
 .btn-action--long {
   padding-left: 2rem;
@@ -67,7 +70,7 @@ p {
 }
 
 .fonctionnement-btn {
-  border: none;
+  position: relative;
   width: 90%;
   height: 4.5rem;
   border-radius: 25px;
@@ -75,12 +78,13 @@ p {
   align-items: center;
   margin-bottom: 1.2rem;
   background-color: #F6F6F6;
-  box-shadow: 2px 2px 8px #aaaaaa;
+  box-shadow: 2px 2px 14px #c3c3c3;
 }
 .fonctionnement-btn img {
   height: 1.1rem;
   width: auto;
   margin: auto 1.3rem;
+  filter: brightness(50%);
 }
 .fonctionnement-btn__number {
   background-color: #9356DC;
@@ -92,6 +96,17 @@ p {
   margin-left: -0.7rem;
   text-align: center;
 }
+.fonctionnement-btn--select {
+  position: absolute;
+  width: 100%;
+  height: 4.5rem;
+  border-radius: 25px;
+  background-color: #9356DC;
+  opacity: 0%;
+}
+.fonctionnement-btn--select:hover {
+  opacity: 10%;
+}
 
 .restaurants-card {
   position: relative;
@@ -99,12 +114,12 @@ p {
   height: 15rem;
   margin-bottom: 1rem;
   border-radius: 20px;
-  box-shadow: 2px 2px 8px #aaaaaa;
+  box-shadow: 2px 2px 14px #c3c3c3;
 }
 .restaurants-card__img {
   width: 100%;
   height: 100%;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
 }
 .restaurants-card__legend {
   position: absolute;
@@ -153,7 +168,7 @@ p {
   padding-left: 1rem;
   border-radius: 20px;
   text-align: left;
-  box-shadow: 2px 2px 8px #aaaaaa;
+  box-shadow: 2px 2px 14px #c3c3c3;
   border: none;
 }
 .btn-plat h3 {
@@ -232,13 +247,19 @@ header h1 {
   margin: 0;
 }
 
+.fonctionnement-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .city-form {
   display: flex;
   justify-content: center;
   background-color: #e2e2e2;
 }
 .city-form img {
-  margin-left: 4rem;
+  margin-left: 1rem;
   width: 1rem;
   height: 1rem;
   align-self: center;
@@ -246,7 +267,10 @@ header h1 {
 .city-form__place {
   background-color: #e2e2e2;
   border: none;
-  margin: 0.8rem 1rem;
+  margin: 0.8rem 0.5rem;
+}
+.city-form:focus {
+  border: 1px solid #FF79DA;
 }
 
 .introduction {
@@ -277,12 +301,6 @@ header h1 {
   margin-left: 5%;
 }
 
-.fonctionnement-btns {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .restaurants {
   padding: 1.5rem 0 3rem;
   background-color: #F6F6F6;
@@ -292,7 +310,6 @@ header h1 {
   margin: 1rem auto;
   max-width: 30rem;
 }
-
 .restaurants-cards {
   display: flex;
   flex-direction: column;
@@ -309,7 +326,7 @@ header h1 {
 }
 
 #france, #delice {
-  object-position: 0 -5rem;
+  object-position: 0 -4rem;
 }
 
 .section-menus {

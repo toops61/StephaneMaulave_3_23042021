@@ -1,5 +1,5 @@
 @mixin btn-shadow {
-    box-shadow: 2px 2px 8px darken($fourth-color,30%);
+    box-shadow: 2px 2px 14px darken($fourth-color,20%);
 }
 
 @mixin flex-column {

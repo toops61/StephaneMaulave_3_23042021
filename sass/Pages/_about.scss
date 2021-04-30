@@ -3,7 +3,7 @@
     justify-content: center;
     background-color: $fifth-color;
     img {  
-        margin-left: 4rem;  
+        margin-left: 1rem;  
         width: 1rem;
         height: 1rem;
         align-self: center;
@@ -11,7 +11,10 @@
     &__place {
         background-color: $fifth-color;
         border: none;
-        margin: .8rem 1rem;
+        margin: .8rem .5rem;
+    }
+    &:focus {
+        border: 1px solid $secondary-color;
     }
 }
 
@@ -41,10 +44,6 @@
     }
 }
 
-.fonctionnement-btns {
-    @include flex-column;
-}
-
 .restaurants {
     padding: 1.5rem 0 3rem;
     background-color: $fourth-color;
@@ -53,10 +52,9 @@
         margin: 1rem auto;
         @include btn-maxwidth;
     }
-}
-
-.restaurants-cards {
-    @include flex-column;
+    &-cards {
+        @include flex-column;
+    }
 }
 
 #palette {
@@ -69,5 +67,5 @@
 }
 
 #france, #delice {
-    object-position: 0 -5rem;
+    object-position: 0 -4rem;
 }
