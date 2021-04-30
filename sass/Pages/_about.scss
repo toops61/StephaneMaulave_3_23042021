@@ -10,11 +10,11 @@
     }
     &__place {
         background-color: $fifth-color;
-        border: none;
         margin: .8rem .5rem;
     }
-    &:focus {
-        border: 1px solid $secondary-color;
+    input:focus {
+        border: 2px solid $primary-color;
+        border-radius: 20px;
     }
 }
 

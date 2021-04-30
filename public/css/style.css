@@ -7,6 +7,11 @@ a {
   color: black;
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
 @font-face {
   font-family: "roboto";
   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
@@ -23,7 +28,7 @@ a {
   font-family: "shrikhand";
   src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
 }
-body, h3 {
+body, h3, input {
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -57,12 +62,14 @@ input {
 
 .btn-action {
   background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
   border-radius: 30px;
   box-shadow: 2px 2px 14px #c3c3c3;
 }
 .btn-action h3 {
   margin: 1rem 1.2rem;
+}
+.btn-action a {
+  color: white;
 }
 .btn-action--long {
   padding-left: 2rem;
@@ -266,11 +273,11 @@ header h1 {
 }
 .city-form__place {
   background-color: #e2e2e2;
-  border: none;
   margin: 0.8rem 0.5rem;
 }
-.city-form:focus {
-  border: 1px solid #FF79DA;
+.city-form input:focus {
+  border: 2px solid #9356DC;
+  border-radius: 20px;
 }
 
 .introduction {
