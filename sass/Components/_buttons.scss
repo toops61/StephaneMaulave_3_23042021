@@ -106,27 +106,52 @@
 }
 
 .btn-plat {
+    display: flex;
     background-color: white;
     margin: 1rem auto 0;
     width: 95%;
+    height: 4rem;
     @include btn-maxwidth;
     padding-left: 1rem;
     border-radius: 20px;
     text-align: left;
     @include btn-shadow;
-    border: none;
-    h3 {
-        width: 85%;
-        margin-top: .8rem;
-        margin-bottom: 0;
+    &__text {
+        border: solid blue;
+        flex: 1;
+        h3 {
+            width: 85%;
+            margin-top: .8rem;
+            margin-bottom: 0;
+        }
+        &__legend {
+            border: solid green;
+            display: flex;
+            justify-content: space-between;
+            width: 94%;
+            p {
+                margin-top: .4rem;
+                font-size: .9rem;
+            }
+        }
     }
-    &__legend {
-        display: flex;
-        justify-content: space-between;
-        width: 95%;
-        p {
-            margin-top: .4rem;
-            font-size: .9rem;
+    &:hover > &__check {
+        transform: scaleX(1);
+    }
+    &__check {
+        border-radius: 0 20px 20px 0;
+        height: 100%;
+        width: 4rem;
+        text-align: center;
+        background-color: $third-color;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 500ms;
+        img {
+            z-index: 10;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-top: 1.2rem;
         }
     }
 }
