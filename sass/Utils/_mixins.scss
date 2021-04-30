@@ -12,3 +12,7 @@
     font-family: 'shrikhand', Arial, Helvetica, sans-serif;
     font-size: 2rem;
 }
+
+@mixin btn-maxwidth {
+    max-width: 30rem;
+}

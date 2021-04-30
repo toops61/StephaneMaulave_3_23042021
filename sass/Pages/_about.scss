@@ -33,7 +33,9 @@
 }
 
 .fonctionnement-section {
-    padding: 1.5rem 0 3rem;
+    width: 90%;
+    @include btn-maxwidth;
+    margin: auto;
     h2 {
         margin-left: 5%;
     }
@@ -44,8 +46,13 @@
 }
 
 .restaurants {
-    @extend .fonctionnement-section;
+    padding: 1.5rem 0 3rem;
     background-color: $fourth-color;
+    h2 {
+        width: 20rem;
+        margin: 1rem auto;
+        @include btn-maxwidth;
+    }
 }
 
 .restaurants-cards {

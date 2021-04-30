@@ -147,9 +147,10 @@ p {
 
 .btn-plat {
   background-color: white;
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+  width: 95%;
+  max-width: 30rem;
   padding-left: 1rem;
-  width: 100%;
   border-radius: 20px;
   text-align: left;
   box-shadow: 2px 2px 8px #aaaaaa;
@@ -183,7 +184,9 @@ footer {
 }
 
 .footer-menu {
-  margin-left: 2rem;
+  width: 90%;
+  max-width: 30rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
@@ -210,6 +213,7 @@ footer {
 }
 
 header {
+  max-width: 30rem;
   position: relative;
   text-align: center;
   margin: 0.6rem auto 0.4rem;
@@ -264,10 +268,12 @@ header h1 {
   margin: 0.4rem auto 2rem;
 }
 
-.fonctionnement-section, .restaurants {
-  padding: 1.5rem 0 3rem;
+.fonctionnement-section {
+  width: 90%;
+  max-width: 30rem;
+  margin: auto;
 }
-.fonctionnement-section h2, .restaurants h2 {
+.fonctionnement-section h2 {
   margin-left: 5%;
 }
 
@@ -278,7 +284,13 @@ header h1 {
 }
 
 .restaurants {
+  padding: 1.5rem 0 3rem;
   background-color: #F6F6F6;
+}
+.restaurants h2 {
+  width: 20rem;
+  margin: 1rem auto;
+  max-width: 30rem;
 }
 
 .restaurants-cards {
@@ -324,6 +336,7 @@ header h1 {
 }
 .menu-article__header {
   width: 90%;
+  max-width: 30rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -338,6 +351,7 @@ header h1 {
 }
 .menu-article__single {
   width: 90%;
+  max-width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -345,6 +359,7 @@ header h1 {
 }
 .menu-article__single__header h3 {
   margin-bottom: 0.5rem;
+  font-family: "roboto thin", Arial, Helvetica, sans-serif;
 }
 
 .souligne {

@@ -6,7 +6,9 @@ footer {
 }
 
 .footer-menu {
-    margin-left: 2rem;
+    width: 90%;
+    @include btn-maxwidth;
+    margin: auto;
     display: flex;
     flex-direction: column;
     h2 { 

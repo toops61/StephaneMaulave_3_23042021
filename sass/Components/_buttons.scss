@@ -94,9 +94,10 @@
 
 .btn-plat {
     background-color: white;
-    margin-top: 1rem;
+    margin: 1rem auto 0;
+    width: 95%;
+    @include btn-maxwidth;
     padding-left: 1rem;
-    width: 100%;
     border-radius: 20px;
     text-align: left;
     @include btn-shadow;
