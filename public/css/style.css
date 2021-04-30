@@ -56,7 +56,7 @@ p {
   border: none;
   color: white;
   border-radius: 30px;
-  box-shadow: 2px 2px 8px #909090;
+  box-shadow: 2px 2px 8px #aaaaaa;
 }
 .btn-action h3 {
   margin: 1.2rem;
@@ -75,7 +75,7 @@ p {
   align-items: center;
   margin-bottom: 1.2rem;
   background-color: #F6F6F6;
-  box-shadow: 2px 2px 8px #909090;
+  box-shadow: 2px 2px 8px #aaaaaa;
 }
 .fonctionnement-btn img {
   height: 1.1rem;
@@ -99,7 +99,7 @@ p {
   height: 15rem;
   margin-bottom: 1rem;
   border-radius: 20px;
-  box-shadow: 2px 2px 8px #909090;
+  box-shadow: 2px 2px 8px #aaaaaa;
 }
 .restaurants-card__img {
   width: 100%;
@@ -152,7 +152,7 @@ p {
   width: 100%;
   border-radius: 20px;
   text-align: left;
-  box-shadow: 2px 2px 8px #909090;
+  box-shadow: 2px 2px 8px #aaaaaa;
   border: none;
 }
 .btn-plat h3 {
@@ -307,7 +307,7 @@ header h1 {
 }
 .section-menus__img {
   width: 100%;
-  height: 100%;
+  height: 16rem;
   object-fit: cover;
   z-index: -1;
 }
