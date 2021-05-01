@@ -176,30 +176,34 @@ input {
   max-width: 30rem;
   padding-left: 1rem;
   border-radius: 20px;
-  text-align: left;
   box-shadow: 2px 2px 14px #c3c3c3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.btn-plat__text {
-  border: solid blue;
-  flex: 1;
-}
-.btn-plat__text h3 {
-  width: 85%;
-  margin-top: 0.8rem;
-  margin-bottom: 0;
-}
-.btn-plat__text__legend {
+.btn-plat__legend {
   border: solid green;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   width: 94%;
 }
-.btn-plat__text__legend p {
+.btn-plat__legend h3 {
+  margin: 0.3rem 0 0;
+  border: solid blue;
+}
+.btn-plat__legend p {
   margin-top: 0.4rem;
   font-size: 0.9rem;
+  border: solid orange;
+}
+.btn-plat__price {
+  margin: 2.5rem 1rem 0;
+  border: solid pink;
 }
 .btn-plat:hover > .btn-plat__check {
-  transform: scaleX(1);
+  transform: translateX(0);
+}
+.btn-plat:hover > .btn-plat__check__img {
+  transform: rotate(1turn);
 }
 .btn-plat__check {
   border-radius: 0 20px 20px 0;
@@ -208,14 +212,14 @@ input {
   text-align: center;
   background-color: #99E2D0;
   transform-origin: right;
-  transform: scaleX(0);
+  transform: translateX(4rem);
   transition: transform 500ms;
 }
-.btn-plat__check img {
-  z-index: 10;
+.btn-plat__check__img {
   width: 1.5rem;
   height: 1.5rem;
   margin-top: 1.2rem;
+  transform: rotate(0);
 }
 
 .container, footer {

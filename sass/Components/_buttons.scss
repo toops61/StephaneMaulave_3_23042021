@@ -114,29 +114,33 @@
     @include btn-maxwidth;
     padding-left: 1rem;
     border-radius: 20px;
-    text-align: left;
     @include btn-shadow;
-    &__text {
-        border: solid blue;
-        flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &__legend {
+        border: solid green;
+        display: flex;
+        flex-direction: column;
+        width: 94%;
         h3 {
-            width: 85%;
-            margin-top: .8rem;
-            margin-bottom: 0;
+            margin: .3rem 0 0;
+            border: solid blue;
         }
-        &__legend {
-            border: solid green;
-            display: flex;
-            justify-content: space-between;
-            width: 94%;
-            p {
-                margin-top: .4rem;
-                font-size: .9rem;
-            }
+        p {
+            margin-top: .4rem;
+            font-size: .9rem;           
+            border: solid orange;
         }
     }
+    &__price {
+        margin: 2.5rem 1rem 0;
+        border: solid pink;
+    }
     &:hover > &__check {
-        transform: scaleX(1);
+        transform: translateX(0);
+    }
+    &:hover > &__check__img {
+        transform: rotate(1turn);
     }
     &__check {
         border-radius: 0 20px 20px 0;
@@ -145,13 +149,13 @@
         text-align: center;
         background-color: $third-color;
         transform-origin: right;
-        transform: scaleX(0);
+        transform: translateX(4rem);
         transition: transform 500ms;
-        img {
-            z-index: 10;
+        &__img {
             width: 1.5rem;
             height: 1.5rem;
             margin-top: 1.2rem;
+            transform: rotate(0);
         }
     }
 }
