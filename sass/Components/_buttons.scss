@@ -104,8 +104,8 @@
         padding-bottom: .4rem;
     }
 }
-
 .btn-plat {
+    cursor: pointer;
     display: flex;
     background-color: white;
     margin: 1rem auto 0;
@@ -116,12 +116,14 @@
     border-radius: 20px;
     @include btn-shadow;
     overflow: hidden;
-    text-overflow: ellipsis;
     &__legend {
         border: solid green;
         display: flex;
         flex-direction: column;
-        width: 94%;
+        width: 94%;       
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         h3 {
             margin: .3rem 0 0;
             border: solid blue;
@@ -138,24 +140,25 @@
     }
     &:hover > &__check {
         transform: translateX(0);
-    }
-    &:hover > &__check__img {
-        transform: rotate(1turn);
+        > img {
+            transform: rotate(1turn);
+        }
     }
     &__check {
         border-radius: 0 20px 20px 0;
         height: 100%;
-        width: 4rem;
+        width: 5.5rem;
         text-align: center;
         background-color: $third-color;
         transform-origin: right;
         transform: translateX(4rem);
         transition: transform 500ms;
         &__img {
-            width: 1.5rem;
-            height: 1.5rem;
-            margin-top: 1.2rem;
+            width: 1.3rem;
+            height: 1.3rem;
+            margin-top: 1.4rem;
             transform: rotate(0);
+            transition: transform 500ms;
         }
     }
 }

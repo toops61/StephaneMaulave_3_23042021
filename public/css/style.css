@@ -168,6 +168,7 @@ input {
 }
 
 .btn-plat {
+  cursor: pointer;
   display: flex;
   background-color: white;
   margin: 1rem auto 0;
@@ -178,13 +179,15 @@ input {
   border-radius: 20px;
   box-shadow: 2px 2px 14px #c3c3c3;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .btn-plat__legend {
   border: solid green;
   display: flex;
   flex-direction: column;
   width: 94%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .btn-plat__legend h3 {
   margin: 0.3rem 0 0;
@@ -202,13 +205,13 @@ input {
 .btn-plat:hover > .btn-plat__check {
   transform: translateX(0);
 }
-.btn-plat:hover > .btn-plat__check__img {
+.btn-plat:hover > .btn-plat__check > img {
   transform: rotate(1turn);
 }
 .btn-plat__check {
   border-radius: 0 20px 20px 0;
   height: 100%;
-  width: 4rem;
+  width: 5.5rem;
   text-align: center;
   background-color: #99E2D0;
   transform-origin: right;
@@ -216,10 +219,11 @@ input {
   transition: transform 500ms;
 }
 .btn-plat__check__img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-top: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-top: 1.4rem;
   transform: rotate(0);
+  transition: transform 500ms;
 }
 
 .container, footer {
