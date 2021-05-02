@@ -406,6 +406,9 @@ header h1 {
   width: 1.7rem;
   height: 1.7rem;
 }
+.menu-article__header img:hover {
+  fill: #9356DC;
+}
 .menu-article__single {
   width: 90%;
   max-width: 30rem;
