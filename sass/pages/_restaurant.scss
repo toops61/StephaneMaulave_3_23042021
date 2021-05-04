@@ -24,13 +24,25 @@
         h2 {
             @include police-logo;
         }
-        img {
+        &__img {
+            position: relative;
             width: 1.7rem;
             height: 1.7rem;
-            &:hover {
-                fill: $primary-color;
+            z-index: 1;
+            &:hover::after {
+                opacity: 1;
+            }
+            &::after {
+                position: absolute;
+                content: "\f004";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                background-color: $primary-color;
+                z-index: 10;
+                opacity: 0;
             }
         }
+
     }
     &__single {
         width: 90%;

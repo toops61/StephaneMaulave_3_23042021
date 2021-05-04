@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -215,15 +216,15 @@ input {
   text-align: center;
   background-color: #99E2D0;
   transform-origin: right;
-  transform: translateX(4rem);
-  transition: transform 500ms;
+  transform: translateX(6rem);
+  transition: transform 500ms ease;
 }
 .btn-plat__check__img {
   width: 1.3rem;
   height: 1.3rem;
   margin-top: 1.4rem;
   transform: rotate(0);
-  transition: transform 500ms;
+  transition: transform 600ms ease-in-out;
 }
 
 .container, footer {
@@ -402,12 +403,23 @@ header h1 {
   font-family: "shrikhand", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
 }
-.menu-article__header img {
+.menu-article__header__img {
+  position: relative;
   width: 1.7rem;
   height: 1.7rem;
+  z-index: 1;
 }
-.menu-article__header img:hover {
-  fill: #9356DC;
+.menu-article__header__img:hover::after {
+  opacity: 1;
+}
+.menu-article__header__img::after {
+  position: absolute;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #9356DC;
+  z-index: 10;
+  opacity: 0;
 }
 .menu-article__single {
   width: 90%;
