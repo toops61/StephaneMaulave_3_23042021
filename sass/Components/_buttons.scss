@@ -115,23 +115,24 @@
     padding-left: 1rem;
     border-radius: 20px;
     @include btn-shadow;
-    overflow: hidden;
     &__legend {
         border: solid green;
         display: flex;
         flex-direction: column;
-        width: 94%;       
+        width: 94%;   
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         h3 {
             margin: .3rem 0 0;
             border: solid blue;
+            text-overflow: ellipsis;       
         }
         p {
             margin-top: .4rem;
             font-size: .9rem;           
             border: solid orange;
+            text-overflow: ellipsis;
         }
     }
     &__price {
@@ -140,6 +141,7 @@
     }
     &:hover > &__check {
         transform: translateX(0);
+        width: 5.5rem;
         > img {
             transform: rotate(1turn);
         }
@@ -147,7 +149,7 @@
     &__check {
         border-radius: 0 20px 20px 0;
         height: 100%;
-        width: 5.5rem;
+        width: 0rem;
         text-align: center;
         background-color: $third-color;
         transform-origin: right;

@@ -29,6 +29,29 @@ input {
   font-family: "shrikhand";
   src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Font Awesome";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.eot");
+  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+.fa,
+.fas,
+.far,
+.fal,
+.fad,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
 body, h3, input {
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
@@ -179,7 +202,6 @@ input {
   padding-left: 1rem;
   border-radius: 20px;
   box-shadow: 2px 2px 14px #c3c3c3;
-  overflow: hidden;
 }
 .btn-plat__legend {
   border: solid green;
@@ -193,11 +215,13 @@ input {
 .btn-plat__legend h3 {
   margin: 0.3rem 0 0;
   border: solid blue;
+  text-overflow: ellipsis;
 }
 .btn-plat__legend p {
   margin-top: 0.4rem;
   font-size: 0.9rem;
   border: solid orange;
+  text-overflow: ellipsis;
 }
 .btn-plat__price {
   margin: 2.5rem 1rem 0;
@@ -205,6 +229,7 @@ input {
 }
 .btn-plat:hover > .btn-plat__check {
   transform: translateX(0);
+  width: 5.5rem;
 }
 .btn-plat:hover > .btn-plat__check > img {
   transform: rotate(1turn);
@@ -212,7 +237,7 @@ input {
 .btn-plat__check {
   border-radius: 0 20px 20px 0;
   height: 100%;
-  width: 5.5rem;
+  width: 0rem;
   text-align: center;
   background-color: #99E2D0;
   transform-origin: right;
@@ -415,8 +440,8 @@ header h1 {
 .menu-article__header__img::after {
   position: absolute;
   content: "";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-family: "Font Awesome";
+  font-weight: 400;
   background-color: #9356DC;
   z-index: 10;
   opacity: 0;
