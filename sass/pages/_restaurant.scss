@@ -24,25 +24,27 @@
         h2 {
             @include police-logo;
         }
-        &__img {
+        &__heart {
             position: relative;
-            width: 1.7rem;
-            height: 1.7rem;
-            z-index: 1;
+            width: 1.8rem;
+            height: 1.8rem;
+            &::before {
+                @include heart ($family: 'Font Awesome 5 empty', $weight: 400);
+            }
             &:hover::after {
                 opacity: 1;
             }
             &::after {
-                position: absolute;
-                content: "\f004";
-                font-family: "Font Awesome";
-                font-weight: 400;
-                background-color: $primary-color;
-                z-index: 10;
+                @include heart;
+                background: -webkit-linear-gradient($primary-color, $secondary-color);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: opacity 800ms;
+                transform-origin: bottom;
                 opacity: 0;
             }
         }
-
     }
     &__single {
         width: 90%;

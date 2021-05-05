@@ -29,20 +29,8 @@ input {
   font-family: "shrikhand";
   src: url("../fonts/Shrikhand-Regular.ttf") format("truetype");
 }
-@font-face {
-  font-family: "Font Awesome";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("../webfonts/fa-regular-400.eot");
-  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
-}
 .fa,
-.fas,
-.far,
-.fal,
-.fad,
-.fab {
+.fas {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -52,6 +40,22 @@ input {
   line-height: 1;
 }
 
+@font-face {
+  font-family: "Font Awesome 5";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+@font-face {
+  font-family: "Font Awesome 5 empty";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/fa-regular-400.eot");
+  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
+}
 body, h3, input {
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
@@ -161,10 +165,59 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.restaurants-card__legend img {
+.restaurants-card__legend__heart {
+  border: solid green;
+  position: relative;
+  margin: 1.2rem;
   width: 1.8rem;
   height: 1.8rem;
-  margin: 1.3rem;
+  text-align: center;
+}
+.restaurants-card__legend__heart::before {
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  font-family: "Font Awesome 5 empty";
+  font-weight: 400;
+  font-size: 1.7rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.restaurants-card__legend__heart:hover::after {
+  opacity: 1;
+}
+.restaurants-card__legend__heart::after {
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  font-family: "Font Awesome 5";
+  font-weight: 900;
+  font-size: 1.7rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 800ms;
+  transform-origin: bottom;
+  opacity: 0;
 }
 .restaurants-card__legend__title {
   margin-left: 1rem;
@@ -202,6 +255,7 @@ input {
   padding-left: 1rem;
   border-radius: 20px;
   box-shadow: 2px 2px 14px #c3c3c3;
+  overflow: hidden;
 }
 .btn-plat__legend {
   border: solid green;
@@ -237,7 +291,7 @@ input {
 .btn-plat__check {
   border-radius: 0 20px 20px 0;
   height: 100%;
-  width: 0rem;
+  width: 0;
   text-align: center;
   background-color: #99E2D0;
   transform-origin: right;
@@ -428,22 +482,55 @@ header h1 {
   font-family: "shrikhand", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
 }
-.menu-article__header__img {
+.menu-article__header__heart {
   position: relative;
-  width: 1.7rem;
-  height: 1.7rem;
-  z-index: 1;
+  width: 1.8rem;
+  height: 1.8rem;
 }
-.menu-article__header__img:hover::after {
-  opacity: 1;
-}
-.menu-article__header__img::after {
+.menu-article__header__heart::before {
+  cursor: pointer;
   position: absolute;
   content: "";
-  font-family: "Font Awesome";
+  font-family: "Font Awesome 5 empty";
   font-weight: 400;
-  background-color: #9356DC;
-  z-index: 10;
+  font-size: 1.7rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.menu-article__header__heart:hover::after {
+  opacity: 1;
+}
+.menu-article__header__heart::after {
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  font-family: "Font Awesome 5";
+  font-weight: 900;
+  font-size: 1.7rem;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 800ms;
+  transform-origin: bottom;
   opacity: 0;
 }
 .menu-article__single {

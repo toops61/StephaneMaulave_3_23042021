@@ -16,3 +16,22 @@
 @mixin btn-maxwidth {
     max-width: 30rem;
 }
+
+@mixin heart ($family: 'Font Awesome 5', $weight: 900) {
+    cursor: pointer;
+    position: absolute;
+    content: "\f004";
+    font-family: $family;
+    font-weight: $weight;
+    font-size: 1.7rem;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

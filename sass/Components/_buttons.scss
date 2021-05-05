@@ -73,10 +73,29 @@
         border-radius: 0 0 20px 20px;
         display: flex;
         justify-content: space-between;
-        img {
+        &__heart {
+            border: solid green;
+            position: relative;
+            margin: 1.2rem;
             width: 1.8rem;
             height: 1.8rem;
-            margin: 1.3rem;
+            text-align: center;
+            &::before {
+                @include heart ($family: 'Font Awesome 5 empty', $weight: 400);
+            }
+            &:hover::after {
+                opacity: 1;
+            }
+            &::after {
+                @include heart;
+                background: -webkit-linear-gradient($primary-color, $secondary-color);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: opacity 800ms;
+                transform-origin: bottom;
+                opacity: 0;
+            }
         }
         &__title {
             margin-left: 1rem;
@@ -115,6 +134,7 @@
     padding-left: 1rem;
     border-radius: 20px;
     @include btn-shadow;
+    overflow: hidden;
     &__legend {
         border: solid green;
         display: flex;
@@ -149,7 +169,7 @@
     &__check {
         border-radius: 0 20px 20px 0;
         height: 100%;
-        width: 0rem;
+        width: 0;
         text-align: center;
         background-color: $third-color;
         transform-origin: right;
