@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin police-logo {
     font-family: 'shrikhand', Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
