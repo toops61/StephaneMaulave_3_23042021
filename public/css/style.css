@@ -24,6 +24,15 @@
     visibility: hidden;
   }
 }
+@keyframes fadeIn {
+  50% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   margin: 0;
 }
@@ -116,7 +125,7 @@ input {
 .btn-action {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 30px;
-  box-shadow: 2px 2px 14px #c3c3c3;
+  box-shadow: 2px 2px 14px #aaaaaa;
 }
 .btn-action h3 {
   margin: 1rem 1.2rem;
@@ -128,6 +137,10 @@ input {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.btn-action:hover {
+  box-shadow: 8px 8px 6px #aaaaaa;
+  filter: brightness(110%);
+}
 
 .fonctionnement-btn {
   position: relative;
@@ -138,7 +151,7 @@ input {
   align-items: center;
   margin-bottom: 1.2rem;
   background-color: #F6F6F6;
-  box-shadow: 2px 2px 14px #c3c3c3;
+  box-shadow: 2px 2px 14px #aaaaaa;
 }
 .fonctionnement-btn img {
   height: 1.1rem;
@@ -167,6 +180,10 @@ input {
 .fonctionnement-btn--select:hover {
   opacity: 10%;
 }
+.fonctionnement-btn:hover {
+  box-shadow: 8px 8px 6px #aaaaaa;
+  filter: brightness(110%);
+}
 
 .restaurants-card {
   position: relative;
@@ -174,7 +191,7 @@ input {
   height: 15rem;
   margin-bottom: 1rem;
   border-radius: 20px;
-  box-shadow: 2px 2px 14px #c3c3c3;
+  box-shadow: 2px 2px 14px #aaaaaa;
 }
 .restaurants-card__img {
   width: 100%;
@@ -191,7 +208,6 @@ input {
   justify-content: space-between;
 }
 .restaurants-card__legend__heart {
-  border: solid green;
   position: relative;
   margin: 1.2rem;
   width: 1.8rem;
@@ -237,7 +253,6 @@ input {
   bottom: 0;
   left: 0;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 800ms;
@@ -268,6 +283,10 @@ input {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
 }
+.restaurants-card:hover {
+  box-shadow: 8px 8px 6px #aaaaaa;
+  filter: brightness(110%);
+}
 
 .btn-plat {
   cursor: pointer;
@@ -279,7 +298,7 @@ input {
   max-width: 30rem;
   padding-left: 1rem;
   border-radius: 20px;
-  box-shadow: 2px 2px 14px #c3c3c3;
+  box-shadow: 2px 2px 14px #aaaaaa;
   overflow: hidden;
 }
 .btn-plat__legend {
@@ -305,6 +324,10 @@ input {
 .btn-plat__price {
   margin: 2.5rem 1rem 0;
   border: solid pink;
+}
+.btn-plat:hover {
+  box-shadow: 8px 8px 6px #aaaaaa;
+  filter: brightness(110%);
 }
 .btn-plat:hover > .btn-plat__check {
   transform: translateX(0);
@@ -670,7 +693,6 @@ header h1 {
   bottom: 0;
   left: 0;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 800ms;

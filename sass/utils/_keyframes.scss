@@ -25,3 +25,13 @@
        visibility: hidden;
     }
 }
+
+@keyframes fadeIn {
+    50%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+       opacity: 1;      
+    }
+}

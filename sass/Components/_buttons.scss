@@ -12,6 +12,10 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
+    &:hover {
+        @include btn-shadow(8px, 8px, 6px);
+        filter: brightness(110%);
+    }
 }
 
 .fonctionnement-btn {
@@ -51,6 +55,10 @@
             opacity: 10%;
         }
     }
+    &:hover {
+        @include btn-shadow(8px, 8px, 6px);
+        filter: brightness(110%);
+    }
 }
 
 .restaurants-card {
@@ -74,7 +82,6 @@
         display: flex;
         justify-content: space-between;
         &__heart {
-            border: solid green;
             position: relative;
             margin: 1.2rem;
             width: 1.8rem;
@@ -89,7 +96,6 @@
             &::after {
                 @include heart;
                 background: -webkit-linear-gradient($primary-color, $secondary-color);
-                background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 transition: opacity 800ms;
@@ -121,6 +127,10 @@
         font-size: .9rem;
         padding-top: .4rem;
         padding-bottom: .4rem;
+    }
+    &:hover {
+        @include btn-shadow(8px, 8px, 6px);
+        filter: brightness(110%);
     }
 }
 .btn-plat {
@@ -158,6 +168,10 @@
     &__price {
         margin: 2.5rem 1rem 0;
         border: solid pink;
+    }
+    &:hover {
+        @include btn-shadow(8px, 8px, 6px);
+        filter: brightness(110%);
     }
     &:hover > &__check {
         transform: translateX(0);
