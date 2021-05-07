@@ -35,10 +35,28 @@
     50%{
         opacity: 0;
         visibility: hidden;
-        transform: translate(0, 2rem);
+        transform: translate(0, 1rem);
     }
     100%{
        opacity: 1;
        transform: translate(0, 0);  
+    }
+}
+
+@keyframes widthGrow {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 5.5rem;
+    }
+}
+
+@keyframes widthShrink {
+    0%{
+        width: 5.5rem;
+    }
+    100%{
+        width: 0;
     }
 }

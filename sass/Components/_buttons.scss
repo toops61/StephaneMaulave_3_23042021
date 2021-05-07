@@ -184,7 +184,7 @@
     }
     &:hover > &__check {
         transform: translateX(0);
-        width: 5.5rem;
+        animation: widthGrow 600ms forwards;
         > img {
             transform: rotate(1turn);
         }
@@ -198,6 +198,7 @@
         transform-origin: right;
         transform: translateX(6rem);
         transition: transform 500ms ease;
+        animation: widthShrink 400ms forwards;
         &__img {
             width: 1.3rem;
             height: 1.3rem;

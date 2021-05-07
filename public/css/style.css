@@ -33,11 +33,27 @@
   50% {
     opacity: 0;
     visibility: hidden;
-    transform: translate(0, 2rem);
+    transform: translate(0, 1rem);
   }
   100% {
     opacity: 1;
     transform: translate(0, 0);
+  }
+}
+@keyframes widthGrow {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5.5rem;
+  }
+}
+@keyframes widthShrink {
+  0% {
+    width: 5.5rem;
+  }
+  100% {
+    width: 0;
   }
 }
 body {
@@ -347,7 +363,7 @@ input {
 }
 .btn-plat:hover > .btn-plat__check {
   transform: translateX(0);
-  width: 5.5rem;
+  animation: widthGrow 600ms forwards;
 }
 .btn-plat:hover > .btn-plat__check > img {
   transform: rotate(1turn);
@@ -361,6 +377,7 @@ input {
   transform-origin: right;
   transform: translateX(6rem);
   transition: transform 500ms ease;
+  animation: widthShrink 400ms forwards;
 }
 .btn-plat__check__img {
   width: 1.3rem;
