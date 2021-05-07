@@ -153,27 +153,30 @@
     &:nth-child(4) {
         animation-delay: .6s;
     }
+    &:nth-child(5) {
+        animation-delay: .9s;
+    }
     &__legend {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 94%;   
         overflow: hidden;
         white-space: nowrap;
         h3 {
-            height: 1rem;
-            margin: .3rem 0 0;
+            margin: .6rem 0 0;
             overflow: hidden;
             text-overflow: ellipsis;       
         }
         p {
-            margin: .4rem 0 0;
+            margin: .4rem 0 .6rem;
             font-size: .9rem;
             overflow: hidden;
             text-overflow: ellipsis;
         }
     }
     &__price {
-        margin: 2.5rem 1rem 0;
+        margin: 2.2rem 1rem 0;
     }
     &:hover {
         @include btn-shadow(8px, 8px, 6px);
