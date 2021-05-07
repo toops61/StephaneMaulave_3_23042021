@@ -37,6 +37,7 @@
             &::after {
                 @include heart;
                 background: -webkit-linear-gradient($primary-color, $secondary-color);
+                background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 transition: opacity 800ms;

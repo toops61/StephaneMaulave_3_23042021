@@ -25,12 +25,19 @@
   }
 }
 @keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, 2rem);
+  }
   50% {
     opacity: 0;
     visibility: hidden;
+    transform: translate(0, 2rem);
   }
   100% {
     opacity: 1;
+    transform: translate(0, 0);
   }
 }
 body {
@@ -253,6 +260,7 @@ input {
   bottom: 0;
   left: 0;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 800ms;
@@ -289,6 +297,7 @@ input {
 }
 
 .btn-plat {
+  animation: fadeIn 3s forwards;
   cursor: pointer;
   display: flex;
   background-color: white;
@@ -301,29 +310,33 @@ input {
   box-shadow: 2px 2px 14px #aaaaaa;
   overflow: hidden;
 }
+.btn-plat:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.btn-plat:nth-child(4) {
+  animation-delay: 0.6s;
+}
 .btn-plat__legend {
-  border: solid green;
   display: flex;
   flex-direction: column;
   width: 94%;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 .btn-plat__legend h3 {
+  height: 1rem;
   margin: 0.3rem 0 0;
-  border: solid blue;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .btn-plat__legend p {
-  margin-top: 0.4rem;
+  margin: 0.4rem 0 0;
   font-size: 0.9rem;
-  border: solid orange;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .btn-plat__price {
   margin: 2.5rem 1rem 0;
-  border: solid pink;
 }
 .btn-plat:hover {
   box-shadow: 8px 8px 6px #aaaaaa;
@@ -693,6 +706,7 @@ header h1 {
   bottom: 0;
   left: 0;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 800ms;
