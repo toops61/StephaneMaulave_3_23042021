@@ -185,7 +185,7 @@
         height: 100%;
         width: 0;
         text-align: center;
-        background-color: $third-color;
+        background-color: darken($third-color, $amount: 10%);
         transform-origin: right;
         transform: translateX(6rem);
         transition: transform 500ms ease;
