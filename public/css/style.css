@@ -58,6 +58,8 @@
 }
 body {
   margin: 0;
+  min-width: 320px;
+  max-width: 1920px;
 }
 
 a {
@@ -211,7 +213,7 @@ input {
   color: grey;
 }
 .fonctionnement-btn__icon {
-  margin: auto 1.5rem;
+  margin: auto 6%;
 }
 .fonctionnement-btn__number {
   background-color: #9356DC;
@@ -354,7 +356,7 @@ input {
   margin: 1rem auto 0;
   width: 95%;
   height: 4rem;
-  max-width: 30rem;
+  max-width: 25rem;
   padding-left: 1rem;
   border-radius: 20px;
   box-shadow: 2px 2px 14px #aaaaaa;
@@ -422,8 +424,6 @@ input {
 }
 
 .container, footer {
-  min-width: 320px;
-  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -435,7 +435,7 @@ footer {
 
 .footer-menu {
   width: 90%;
-  max-width: 30rem;
+  max-width: 25rem;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -463,7 +463,7 @@ footer {
 }
 
 header {
-  max-width: 30rem;
+  max-width: 25rem;
   position: relative;
   text-align: center;
   margin: 0.6rem auto 0.4rem;
@@ -648,7 +648,7 @@ header h1 {
 
 .fonctionnement-section {
   width: 90%;
-  max-width: 30rem;
+  max-width: 25rem;
   margin: auto;
 }
 .fonctionnement-section h2 {
@@ -662,7 +662,7 @@ header h1 {
 .restaurants h2 {
   width: 20rem;
   margin: 1rem auto;
-  max-width: 30rem;
+  max-width: 25rem;
 }
 .restaurants-cards {
   display: flex;
@@ -707,7 +707,7 @@ header h1 {
 }
 .menu-article__header {
   width: 90%;
-  max-width: 30rem;
+  max-width: 25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -769,7 +769,7 @@ header h1 {
 }
 .menu-article__single {
   width: 90%;
-  max-width: 30rem;
+  max-width: 25rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
