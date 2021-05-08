@@ -20,7 +20,7 @@
             border-radius: 50%;
             border: 8px solid transparent;
             border-top-color: $secondary-color;
-            animation: spin 2s linear infinite;
+            animation: spin 2s linear 5;
             &::before {
                 content: '';
                 position: absolute;
@@ -28,7 +28,7 @@
                 border-radius: 50%;
                 border: 8px solid transparent;
                 border-top-color: darken($secondary-color, $amount: 20%);
-                animation: spin 3s linear infinite;
+                animation: spin 3s linear 5;
             }
             &::after {
                 content: '';
@@ -37,7 +37,7 @@
                 border-radius: 50%;
                 border: 8px solid transparent;
                 border-top-color: darken($secondary-color, $amount: 40%);
-                animation: spin 1.5s linear infinite;
+                animation: spin 1.5s linear 5;
             }
         }  
         &__flatware {
@@ -45,7 +45,7 @@
             height: 100%;
             div {     
                 transform-origin: 10.5rem 10.6rem;
-                animation: flatware-anim 1.2s linear infinite;
+                animation: flatware-anim 1.2s linear 5;
                 img {
                     position: absolute;
                     top: 14rem;
