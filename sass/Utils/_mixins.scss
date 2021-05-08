@@ -30,6 +30,18 @@
     max-width: 30rem;
 }
 
+@mixin icon ($content: "\f3cd", $font-size: 1.4em) {
+    content: $content;
+    font-family: 'Font Awesome 5';
+    font-weight: 900;
+    font-size: $font-size;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    color: grey;
+}
+
 @mixin heart ($family: 'Font Awesome 5', $weight: 900) {
     cursor: pointer;
     position: absolute;

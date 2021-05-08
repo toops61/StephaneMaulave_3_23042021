@@ -24,24 +24,31 @@
     height: 4.5rem;
     border-radius: 25px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 1.2rem;
     background-color: $fourth-color;
     @include btn-shadow;
-    img {  
-        height: 1.1rem;
-        width: auto;
-        margin: auto 1.3rem;
-        filter: brightness(50%);
+    &:nth-child(1) p::before {
+        @include icon;
+    }
+    &:nth-child(2) p::before {
+        @include icon ("\f0ca", 1.3em);
+    }
+    &:nth-child(3) p::before {
+        @include icon ("\f54e", 1.2em);
+    }
+    &__icon {
+        margin: auto 1.5rem;
     }
     &__number {
         background-color: $primary-color;
         color: white;
         width: 1.5rem;
-        height: 1.3rem;
+        height: 1.4rem;
         border-radius: 50%;
-        padding-top: .2rem;
-        margin-left: -.7rem;
+        padding-top: .17rem;
+        margin-left: -.9rem;
         text-align: center;
     }
     &--select {
@@ -52,12 +59,15 @@
         background-color: $primary-color;
         opacity: 0%;
         &:hover {
-            opacity: 10%;
+            opacity: 20%;
         }
     }
     &:hover {
         @include btn-shadow(8px, 8px, 6px);
         filter: brightness(110%);
+        & > p::before {
+            color: $primary-color;
+        }
     }
 }
 

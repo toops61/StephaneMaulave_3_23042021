@@ -171,25 +171,56 @@ input {
   height: 4.5rem;
   border-radius: 25px;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1.2rem;
   background-color: #F6F6F6;
   box-shadow: 2px 2px 14px #aaaaaa;
 }
-.fonctionnement-btn img {
-  height: 1.1rem;
-  width: auto;
-  margin: auto 1.3rem;
-  filter: brightness(50%);
+.fonctionnement-btn:nth-child(1) p::before {
+  content: "";
+  font-family: "Font Awesome 5";
+  font-weight: 900;
+  font-size: 1.4em;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: grey;
+}
+.fonctionnement-btn:nth-child(2) p::before {
+  content: "";
+  font-family: "Font Awesome 5";
+  font-weight: 900;
+  font-size: 1.3em;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: grey;
+}
+.fonctionnement-btn:nth-child(3) p::before {
+  content: "";
+  font-family: "Font Awesome 5";
+  font-weight: 900;
+  font-size: 1.2em;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: grey;
+}
+.fonctionnement-btn__icon {
+  margin: auto 1.5rem;
 }
 .fonctionnement-btn__number {
   background-color: #9356DC;
   color: white;
   width: 1.5rem;
-  height: 1.3rem;
+  height: 1.4rem;
   border-radius: 50%;
-  padding-top: 0.2rem;
-  margin-left: -0.7rem;
+  padding-top: 0.17rem;
+  margin-left: -0.9rem;
   text-align: center;
 }
 .fonctionnement-btn--select {
@@ -201,11 +232,14 @@ input {
   opacity: 0%;
 }
 .fonctionnement-btn--select:hover {
-  opacity: 10%;
+  opacity: 20%;
 }
 .fonctionnement-btn:hover {
   box-shadow: 8px 8px 6px #aaaaaa;
   filter: brightness(110%);
+}
+.fonctionnement-btn:hover > p::before {
+  color: #9356DC;
 }
 
 .restaurants-card {
