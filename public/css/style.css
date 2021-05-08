@@ -543,7 +543,7 @@ header h1 {
   width: 4rem;
 }
 .loader-anim__flatware div:nth-child(1) {
-  transform: rotate(0);
+  transform: rotate(0deg);
   animation-delay: -1.1s;
 }
 .loader-anim__flatware div:nth-child(2) {
