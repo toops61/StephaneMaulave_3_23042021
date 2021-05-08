@@ -21,9 +21,9 @@
     align-items: center;
 }
 
-@mixin police-logo {
+@mixin police-logo ($fontsize: 1.8rem) {
     font-family: 'shrikhand', Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
+    font-size: $fontsize;
 }
 
 @mixin btn-maxwidth {
