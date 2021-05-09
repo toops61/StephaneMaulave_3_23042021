@@ -111,7 +111,6 @@
             &::after {
                 @include heart;
                 background: -webkit-linear-gradient($primary-color, $secondary-color);
-                background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 transition: opacity 800ms;
@@ -229,6 +228,9 @@
             width: 1.3rem;
             height: 1.3rem;
             margin-top: 1.4rem;
+            @include desktop-version {
+                margin-top: 2.1rem;
+            }
             transform: rotate(0);
             transition: transform 600ms ease-in-out;
         }

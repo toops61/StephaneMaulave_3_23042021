@@ -11,9 +11,15 @@ footer {
     margin: auto;
     display: flex;
     flex-direction: column;
+    @include desktop-version {
+        text-align: center;
+    }
     h2 { 
         @include police-logo;
         font-size: 1.2rem;
+        @include desktop-version {
+            font-size: 2.2rem;
+        }
         margin: 0;
     }
     ul {
