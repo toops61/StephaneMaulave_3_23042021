@@ -50,14 +50,23 @@ p {
 
 h2 {
     font-size: 1.4rem;
+    @include desktop-version {
+        font-size: 1.8rem;
+    }
 }
 
 p {
     font-size: 1.1rem;
+    @include desktop-version {
+        font-size: 1.5rem;
+    }
 }
 
 h3 {
     font-size: 1rem;
+    @include desktop-version {
+        font-size: 1.4rem;
+    }
 }
 
 h4 {

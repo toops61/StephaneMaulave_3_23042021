@@ -73,9 +73,14 @@
 
 .restaurants-card {
     position: relative;
-    width: 18rem;
+    width: 90%;
+    @include btn-maxwidth;    
     height: 14rem;
     margin-bottom: 1rem;
+    @include desktop-version {
+        margin: 1rem;
+        max-width: 22rem;
+    }
     border-radius: 20px;
     @include btn-shadow;
     &__img {

@@ -41,6 +41,10 @@
     margin: auto;
     h2 {
         margin-left: 5%;
+        @include desktop-version {
+            margin-left: 0;
+            text-align: center;
+        }
     }
 }
 
@@ -48,12 +52,22 @@
     padding: 1.5rem 0 3rem;
     background-color: $fourth-color;
     h2 {
-        width: 18rem;
+        width: 90%;
         margin: 1rem auto;
         @include btn-maxwidth;
+        @include desktop-version {
+            text-align: center;
+        }
     }
     &-cards {
         @include flex-column;
+        @include desktop-version {
+            margin: 1rem auto;
+            max-width: 50rem;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
 }
 

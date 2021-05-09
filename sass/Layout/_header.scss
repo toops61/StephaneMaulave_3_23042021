@@ -10,9 +10,17 @@ header {
         width: 1rem;
         height: 2rem;
         transform: rotate(-90deg);
+        @include desktop-version {
+            left: 0;
+            top: 1rem;
+            width: 1.2rem;
+        }
     }
     h1 {
         @include police-logo;
+        @include desktop-version {
+            font-size: 3rem;
+        }
         margin: 0;
     }
 }
