@@ -286,8 +286,8 @@ input {
 .restaurants-card__legend__heart {
   position: relative;
   margin: 1.2rem;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2rem;
+  height: 1.9rem;
   text-align: center;
 }
 .restaurants-card__legend__heart::before {
@@ -328,10 +328,11 @@ input {
   right: 0;
   bottom: 0;
   left: 0;
+  font-size: 1.82rem;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: opacity 800ms;
+  transition: opacity 800ms ease-in-out;
   transform-origin: bottom;
   opacity: 0;
 }
@@ -841,13 +842,13 @@ header h1 {
 .menu-article__header__heart {
   position: relative;
   text-align: center;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2rem;
+  height: 1.9rem;
 }
 @media screen and (min-width: 768px) {
   .menu-article__header__heart {
-    width: 2.5rem;
-    height: 2.3rem;
+    width: 2.7rem;
+    height: 2.5rem;
   }
 }
 .menu-article__header__heart::before {
@@ -893,6 +894,7 @@ header h1 {
   right: 0;
   bottom: 0;
   left: 0;
+  font-size: 1.82rem;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -902,7 +904,8 @@ header h1 {
 }
 @media screen and (min-width: 768px) {
   .menu-article__header__heart::after {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
+    top: -0.11rem;
   }
 }
 .menu-article__single {
