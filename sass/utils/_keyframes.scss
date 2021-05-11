@@ -55,8 +55,10 @@
 @keyframes widthShrink {
     0%{
         width: 5.5rem;
+        filter: brightness(110%);
     }
     100%{
         width: 0;
+        filter: brightness(110%);
     }
 }

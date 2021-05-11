@@ -151,7 +151,7 @@
     }
 }
 .btn-plat {
-    animation: fadeIn 3s forwards;
+    animation: fadeIn 2s both;
     cursor: pointer;
     display: flex;
     background-color: white;
@@ -224,7 +224,7 @@
         transform-origin: right;
         transform: translateX(6rem);
         transition: transform 500ms ease;
-        animation: widthShrink 400ms forwards;
+        animation: widthShrink 400ms ease-in-out forwards;
         &__img {
             width: 1.3rem;
             height: 1.3rem;

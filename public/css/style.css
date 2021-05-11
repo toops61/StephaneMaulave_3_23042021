@@ -51,9 +51,11 @@
 @keyframes widthShrink {
   0% {
     width: 5.5rem;
+    filter: brightness(110%);
   }
   100% {
     width: 0;
+    filter: brightness(110%);
   }
 }
 body {
@@ -367,7 +369,7 @@ input {
 }
 
 .btn-plat {
-  animation: fadeIn 3s forwards;
+  animation: fadeIn 2s both;
   cursor: pointer;
   display: flex;
   background-color: white;
@@ -452,7 +454,7 @@ input {
   transform-origin: right;
   transform: translateX(6rem);
   transition: transform 500ms ease;
-  animation: widthShrink 400ms forwards;
+  animation: widthShrink 400ms ease-in-out forwards;
 }
 .btn-plat__check__img {
   width: 1.3rem;
@@ -587,7 +589,7 @@ header h1 {
   border-radius: 50%;
   border: 8px solid transparent;
   border-top-color: #FF79DA;
-  animation: spin 2s linear 5;
+  animation: spin 2s linear 2;
 }
 .loader-anim__spin::before {
   content: "";
@@ -599,7 +601,7 @@ header h1 {
   border-radius: 50%;
   border: 8px solid transparent;
   border-top-color: #ff13be;
-  animation: spin 3s linear 5;
+  animation: spin 3s linear;
 }
 .loader-anim__spin::after {
   content: "";
@@ -611,7 +613,7 @@ header h1 {
   border-radius: 50%;
   border: 8px solid transparent;
   border-top-color: #ac007d;
-  animation: spin 1.5s linear 5;
+  animation: spin 1.5s linear 2;
 }
 .loader-anim__flatware {
   width: 100%;
@@ -619,7 +621,7 @@ header h1 {
 }
 .loader-anim__flatware div {
   transform-origin: 10.5rem 10.6rem;
-  animation: flatware-anim 1.2s linear 5;
+  animation: flatware-anim 1.2s linear 2;
 }
 .loader-anim__flatware div img {
   position: absolute;
